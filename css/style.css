@@ -180,6 +180,9 @@ h2{
 .header-section nav ul li a:hover{
     color: var(--primary);
 }
+.header-section .header-btn{
+    text-align: right;
+}
 .header-section .header-btn .btn{
     padding: 8px 35px;
     border-radius: 10px;
@@ -459,6 +462,172 @@ h2{
 
 
 /* Media Query - Mobile and Tablet*/
+@media (max-width: 1024px){
+    /* Column Width */
+    .col-2{
+        width: 25%;
+    }
+    .col-8{
+        width: 50%;
+    }
+    [class*="col-"]{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    /* Header Section */
+    .header-section{
+        padding: 20px 15px;
+    }
+    .header-section .header-btn{
+        text-align: right;
+    }
+
+    /* Hero Section */
+    .hero-section{
+        padding: 100px 15px;
+    }
+    .hero-section .hero-content h1{
+        font-size: 4.4rem;
+    }
+    .hero-section .hero-btn-box .btn{
+        margin-top: 160px;
+    }
+
+    /* Speaker Section */
+    .speaker-section{
+        padding: 90px 15px;
+    }
+
+    /* Pricing Section */
+    .pricing-section{
+        padding: 90px 15px;
+    }
+    .pricing-section .card{
+        padding: 20px;
+    }
+
+    /* Schedule Section - AI Generated Start */
+    .schedule-section{
+        padding: 90px 15px;
+    }
+
+    /* Footer Section */
+    .footer-section{
+        padding: 40px 20px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    /* Global CSS */
+    .card .card-top-title,.card .card-title,.card .card-subtitle{
+        text-align: center;
+    }
+
+
+    /* Header Section */
+    .header-section .col-2{
+        width: 100%;
+    }
+    .header-section .col-8{
+        width: 100%;
+    }
+    .header-section .logo img{
+        text-align: center;
+        margin: 0px auto 15px;
+    }
+    .header-section .main-menu ul li a{
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+    .header-section .header-btn{
+        display: none;
+    }
+
+
+    /* Hero Section */
+    .hero-section{
+        padding: 80px 20px;
+    }
+    .hero-section .hero-content h1{
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    .hero-section .hero-content p{
+        width: 85%;
+    }
+    .hero-section .hero-btn-box .btn{
+        margin-top: 80px;
+    }
+
+
+    /* Speakers Section */
+    .speaker-section{
+        padding: 70px 20px;
+    }
+    .speaker-section .section-title{
+        font-size: 2.2rem;
+    }
+
+
+    /* Pricing Section */
+    .pricing-section{
+        padding: 70px 20px;
+    }
+    .pricing-section .section-title{
+        font-size: 2.2rem;
+    }
+    .pricing-section .col-4{
+        width: 50%;
+    }
+    .pricing-section .card{
+        margin-bottom: 30px;
+    }
+    .pricing-section .pricing-head{
+        text-align: center;
+    }
+    .pricing-section .pricing-head .pricing-title{
+        font-size: 2.2rem;
+    }
+    .pricing-section .pricing-footer .btn{
+        margin-top: 20px;
+    }
+
+    /* Schedule Section - AI Generated */
+    .schedule-section{
+        padding: 70px 20px;
+    }
+    .schedule-section .schedule-header h2{
+        font-size: 2.2rem;
+    }
+    .schedule-section .schedule-grid{
+        margin-bottom: 30px;
+    }
+    .schedule-section .schedule-grid .col-4{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .schedule-section .schedule-cta{
+        margin-top: 20px;
+    }
+    
+
+    /* Footer Section */
+    .footer-section .col-6{
+        width: 100%;
+    }
+    .footer-section .foot-logo-box img{
+        margin: 0 auto 15px;
+    }
+    .footer-section .social-box{
+        justify-content: center;
+    }
+    .footer-section .social-box a{
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 600px){
     /* Global CSS */
     .card .card-top-title,.card .card-title,.card .card-subtitle{
