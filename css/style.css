@@ -6,6 +6,7 @@
     --gray: #f9f9f9;
     --white: #fff;
     --black: #1a1a1a;
+    --menu: #575757;
 }
 *{
     margin: 0;
@@ -21,6 +22,10 @@ body{
 img{
     max-width: 100%;
     display: block;
+}
+a{
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
 }
 p{
     color: var(--text);
@@ -76,4 +81,47 @@ h1,h2,h3,h4,h5,h6{
 }
 .col-12{
     width: 100%;
+}
+/* Global Button */
+.btn{
+    color: var(--white);
+    background: var(--primary);
+    padding: 12px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Header Section Start */
+.header-section{
+    background: #f9f9f9;
+    padding: 20px 0px;
+}
+.header-section .row{
+    align-items: center;
+}
+.header-section nav{
+
+}
+.header-section nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.header-section nav ul li{
+    
+}
+.header-section nav ul li a{
+    color: var(--menu);
+    padding: 10px 20px;
+    transition: 0.2s ease-in-out;
+}
+.header-section nav ul li a:hover{
+    color: var(--primary);
+}
+.header-section .header-btn .btn{
+    padding: 8px 40px;
+    border-radius: 10px;
 }
