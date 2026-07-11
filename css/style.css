@@ -1,0 +1,79 @@
+/* Global CSS */
+:root{
+    --primary: #1D4ED8;
+    --text: #333333;
+    --bg: #fff;
+    --gray: #f9f9f9;
+    --white: #fff;
+    --black: #1a1a1a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+p{
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #0D1B2A;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.333%;
+}
+.col-2{
+    width: 16.666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333%;
+}
+.col-5{
+    width: 41.666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.333%;
+}
+.col-8{
+    width: 66.666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.333%;
+}
+.col-11{
+    width: 91.666%;
+}
+.col-12{
+    width: 100%;
+}
