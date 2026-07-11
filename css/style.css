@@ -46,6 +46,8 @@ h2{
     font-size: 2.5rem;
     line-height: 1.3;
 }
+
+/* Flexbox Grid System */
 .container{
     width: 100%;
     max-width: 1200px;
@@ -54,6 +56,12 @@ h2{
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .col-1{
     width: 8.333%;
@@ -114,7 +122,13 @@ h2{
     padding: 20px;
 }
 .card .image-box{
-
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card .card-content .card-top-title{
     color: var(--primary);
@@ -159,7 +173,7 @@ h2{
     color: var(--primary);
 }
 .header-section .header-btn .btn{
-    padding: 8px 40px;
+    padding: 8px 35px;
     border-radius: 10px;
 }
 
@@ -211,6 +225,19 @@ h2{
     background: var(--white);
     padding: 90px 0px;
 }
-.speaker-section h2.title{
+.speaker-section .section-title{
     text-align: center;
+    margin-bottom: 30px;
+}
+.speaker-section .card{
+   margin: 15px 0px;
+}
+.speaker-section .card-top-title{
+    text-transform: uppercase;
+}
+
+/* Pricing Section */
+.pricing-section{
+    background: var(--bg);
+    padding: 90px 0px;
 }
