@@ -460,6 +460,12 @@ h2{
 
 /* Media Query - Mobile and Tablet*/
 @media (max-width: 600px){
+    /* Global CSS */
+    .card .card-top-title,.card .card-title,.card .card-subtitle{
+        text-align: center;
+    }
+
+
     /* Header Section */
     .header-section .col-2{
         width: 100%;
@@ -481,7 +487,7 @@ h2{
 
     /* Hero Section */
     .hero-section{
-        padding: 50px 10px;
+        padding: 60px 20px;
     }
     .hero-section .hero-content h1{
         font-size: 2.2rem;
@@ -494,12 +500,72 @@ h2{
         margin-top: 60px;
     }
 
-    /* Schedule Section */
+
+    /* Speakers Section */
+    .speaker-section{
+        padding: 60px 20px;
+    }
+    .speaker-section .section-title{
+        font-size: 1.8rem;
+    }
+    .speaker-section .col-6{
+        width: 100%;
+    }
+
+
+    /* Pricing Section */
+    .pricing-section{
+        padding: 60px 20px;
+    }
+    .pricing-section .section-title{
+        font-size: 1.8rem;
+    }
+    .pricing-section .col-4{
+        width: 100%;
+    }
+    .pricing-section .card{
+        margin-bottom: 30px;
+    }
+    .pricing-section .pricing-head{
+        text-align: center;
+    }
+    .pricing-section .pricing-head .pricing-title{
+        font-size: 2.2rem;
+    }
+    .pricing-section .pricing-footer .btn{
+        margin-top: 20px;
+    }
+
+    /* Schedule Section - AI Generated */
+    .schedule-section{
+        padding: 60px 20px;
+    }
     .schedule-section .schedule-header h2{
         font-size: 1.8rem;
     }
+    .schedule-section .schedule-grid{
+        margin-bottom: 30px;
+    }
     .schedule-section .schedule-grid .col-4{
         width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 30px;
+    }
+    .schedule-section .schedule-cta{
+        margin-top: 20px;
+    }
+    
+
+    /* Footer Section */
+    .footer-section .col-6{
+        width: 100%;
+    }
+    .footer-section .foot-logo-box img{
+        margin: 0 auto 15px;
+    }
+    .footer-section .social-box{
+        justify-content: center;
+    }
+    .footer-section .social-box a{
+        font-size: 18px;
     }
 }
