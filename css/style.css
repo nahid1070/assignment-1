@@ -204,7 +204,8 @@ h2{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: linear-gradient(38deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 68%, rgba(0, 0, 0, 0.2) 100%);
     z-index: -1;
 }
 .hero-section .hero-content{
