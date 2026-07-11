@@ -44,9 +44,6 @@ h1,h2,h3,h4,h5,h6{
     color: #0D1B2A;
     font-family: "Inter", sans-serif;
 }
-h1{
-
-}
 h2{
     font-size: 2.5rem;
     line-height: 1.3;
@@ -175,9 +172,6 @@ h2{
     display: flex;
     justify-content: center;
 }
-.header-section nav ul li{
-    
-}
 .header-section nav ul li a{
     color: var(--menu);
     padding: 10px 20px;
@@ -196,7 +190,7 @@ h2{
 .hero-section{
     background: var(--white) url(../images/banner.jpg) center center no-repeat;
     background-size: cover;
-    padding: 120px 0px 100px;
+    padding: 135px 0px 100px;
     position: relative;
     z-index: 1;
 }
@@ -207,7 +201,7 @@ h2{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 .hero-section .hero-content{
@@ -233,12 +227,17 @@ h2{
     padding: 14px 45px;
     margin-top: 300px;
 }
+.hero-section .hero-btn-box .btn:hover{
+    color: var(--primary);
+    background: var(--gray);
+    border-color: var(--gray);
+}
 
 
 /* Speaker Section */
 .speaker-section{
-    background: var(--white);
-    padding: 90px 0px 60px;
+    background: var(--gray);
+    padding: 100px 0px 100px;
 }
 .speaker-section .section-title{
     text-align: center;
@@ -246,6 +245,11 @@ h2{
 }
 .speaker-section .card{
    margin: 15px 0px;
+   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.speaker-section .card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
 }
 .speaker-section .card-top-title{
     text-transform: uppercase;
@@ -255,7 +259,7 @@ h2{
 /* Pricing Section */
 .pricing-section{
     background: var(--bg);
-    padding: 60px 0px 100px;
+    padding: 120px 0px 120px;
 }
 .pricing-section .section-title{
     text-align: center;
@@ -334,6 +338,89 @@ h2{
     border: 1px solid var(--primary);
 }
 
+
+/* Schedule Section - AI Generated */
+.schedule-section{
+    padding: 100px 0;
+    background: var(--gray);
+}
+
+.schedule-section .schedule-header{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+.schedule-section .schedule-tag{
+    display: inline-block;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.schedule-section .schedule-sub{
+    color: var(--gray-text);
+    font-size: 1.05rem;
+}
+
+.schedule-section .schedule-grid{
+    margin-bottom: 50px;
+}
+
+.schedule-section .day-card{
+    height: 100%;
+    background: var(--white);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.schedule-section .day-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.schedule-section .day-card.featured{
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(29, 78, 216, 0.12);
+}
+
+.schedule-section .day-card .card-title{
+    margin-bottom: 20px;
+}
+
+.schedule-section .session-list{
+    list-style: none;
+}
+
+.schedule-section .session-list li{
+    display: flex;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.schedule-section .session-list li:last-child{
+    border-bottom: none;
+}
+
+.schedule-section .session-list .time{
+    flex-shrink: 0;
+    width: 50px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.schedule-section .schedule-cta{
+    text-align: center;
+    margin-top: 65px;
+}
+
+
 /* Footer Section */
 .footer-section{
     background: var(--footer-bg);
@@ -350,6 +437,7 @@ h2{
     font-size: 20px;
     padding: 0px 8px;
     display: inline-block;
+    transition: 0.3s ease-in-out;
 }
 .footer-section .social-box a:hover{
     color: var(--primary);
@@ -360,11 +448,24 @@ h2{
 .footer-section .footer-bottom .divider{
     width: 100%;
     height: 1px;
-    background: #474747;
+    background: #2c2c2c;
     margin: 20px 0px;
 }
 .footer-section .footer-bottom p{
     font-size: 0.8rem;
     color: #959595;
     text-align: center;
+}
+
+
+/* Media Query - Mobile and Tablet*/
+/* Schedule Section */
+@media (max-width: 768px){
+    .schedule-section .schedule-header h2{
+        font-size: 1.8rem;
+    }
+    .schedule-section .schedule-grid .col-4{
+        width: 100%;
+        margin-bottom: 24px;
+    }
 }
