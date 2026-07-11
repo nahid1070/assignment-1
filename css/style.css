@@ -11,6 +11,9 @@
     --gray-text: #575757;
     --footer-bg: #0D1B2A;
     --gray-text-2: #888888;
+    --Dark-blue: #0D1B2A;
+    --light-blue: #60A5FA;
+    --btn-hover: #0d1b2a;
 }
 *{
     margin: 0;
@@ -119,7 +122,8 @@ h2{
 }
 .btn:hover{
     color: var(--white);
-    background: var(--primary);
+    background: var(--btn-hover);
+    border-color: var(--btn-hover);
 }
 .btn-outline{
     color: var(--primary);
@@ -234,7 +238,7 @@ h2{
 /* Speaker Section */
 .speaker-section{
     background: var(--white);
-    padding: 90px 0px;
+    padding: 90px 0px 60px;
 }
 .speaker-section .section-title{
     text-align: center;
@@ -251,7 +255,7 @@ h2{
 /* Pricing Section */
 .pricing-section{
     background: var(--bg);
-    padding: 90px 0px;
+    padding: 60px 0px 100px;
 }
 .pricing-section .section-title{
     text-align: center;
@@ -259,6 +263,8 @@ h2{
 .pricing-section .section-subtitle{
     font-size: 0.9rem;
     text-align: center;
+    margin-top: 8px;
+    margin-bottom: 40px;
 }
 .pricing-section .card{
     padding: 30px;
@@ -300,6 +306,32 @@ h2{
 .pricing-section .pricing-footer .btn{
     width: 100%;
     display: block;
+}
+.pricing-section .card-pro{
+    background: var(--Dark-blue);
+}
+.pricing-section .card-pro .pricing-head{
+    border-color: var(--text);
+}
+.pricing-section .card-pro .pricing-package{
+    color: var(--light-blue);
+}
+.pricing-section .card-pro .pricing-title{
+    color: var(--white);
+}
+.pricing-section .card-pro .pricing-content ul li{
+    color: #ffffffc2;
+}
+.pricing-section .card-pro .pricing-content ul li::marker{
+    color: var(--light-blue);
+}
+.pricing-section .pricing-footer .btn-team-pack{
+    color: var(--Dark-blue);
+    border: 1px solid var(--Dark-blue);
+}
+.pricing-section .pricing-footer .btn-team-pack:hover{
+    color: var(--white);
+    border: 1px solid var(--primary);
 }
 
 /* Footer Section */
