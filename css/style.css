@@ -333,6 +333,11 @@ h2{
 .pricing-section .card-pro .pricing-content ul li::marker{
     color: var(--light-blue);
 }
+.pricing-section .card-pro .btn:hover{
+    color: var(--primary);
+    background: var(--gray);
+    border-color: var(--gray);
+}
 .pricing-section .pricing-footer .btn-team-pack{
     color: var(--Dark-blue);
     border: 1px solid var(--Dark-blue);
