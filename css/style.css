@@ -653,6 +653,7 @@ h2{
         margin: 0px auto 15px;
     }
     .header-section .main-menu ul li a{
+        font-size: 1rem;
         padding: 8px;
     }
     .header-section .header-btn{
